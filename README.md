@@ -25,3 +25,7 @@ git config --global user.name "actual name used in the account"
 5. add,commit,push
 
 This is all about git
+
+git add.
+git commit-m "added git status"
+git push
