@@ -1,6 +1,6 @@
 # js-basics
 
-Git Command are :
+Git Command are:
 Clone
 add
 commit
