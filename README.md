@@ -1,7 +1,6 @@
 # js-basics
 
-Hello from VSCODE
-
+Git Command are :
 Clone
 add
 commit
