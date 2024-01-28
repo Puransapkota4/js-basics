@@ -15,3 +15,13 @@ git clone paste te ssh key path
 if its your first time using git , and need to config git :
 git config --global user.email "email used"
 git config --global user.name "actual name used in the account"
+
+# recap
+
+1. github acc
+2. ssh key
+3. Project repositories create in github
+4. git clone github ssh url
+5. add,commit,push
+
+This is all about git
