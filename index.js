@@ -1,4 +1,4 @@
-//Prints the message
+/*//Prints the message
 console.log("Hello world");
 
 //variables
@@ -20,7 +20,7 @@ console.log(teach);
 //the difference between let and var is in let variable , value can still be reassigned and in const , vlaue cant be reaasigned even tho they are ES6
 
 // single line comment : //
-/* multi line comment */
+/* multi line comment 
 
 const table = "red table";
 const blackFan = "khaitan";
@@ -37,3 +37,49 @@ console.log(name);
 
 const hello = alert("hello from puran");
 console.log(hello);
+= :assign
+== : value check
+=== : value and data type check
+*/
+// const gender = prompt("what is your gender ? m/f");
+// if (gender === "m") {
+//   alert("you are male");
+// } else {
+//   alert("you are female");
+// }
+
+/* 
+switch (result){
+    case"m":
+        alert("");
+        break;
+    case "f":
+        alert("..");
+        break;
+    default:
+        alert("invalid input. please choose m or f") 
+}
+*/
+// const gender = prompt("what is your gender?");
+
+// switch (gender) {
+//   case "m":
+//     alert("you are male");
+//     break;
+//   case "f":
+//     alert("you are female");
+//     break;
+//   default:
+//     alert("invalid input");
+// }
+
+// const userName = prompt("what is your name ?");
+// const password = prompt("what is your password?");
+// //string literal
+// if (userName === password) {
+//   alert(`welcome ${userName}`);
+// } else {
+//   alert("Invalid un or pw");
+// }
+
+//write a program that asks user for addition of 2 numbers and alert the result.

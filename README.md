@@ -84,3 +84,28 @@ All together there are 12 types of data
 7. Functions
 8. Arrays
 9. Objects
+
+Statement :
+
+if .... else
+syntax:
+if(condition) {
+//code block to be executed
+}
+else{
+//code block to be execute
+
+}
+
+Switch ...case
+Syntax :
+Switch(Expression){
+case x:
+//code block
+break;
+Case y:
+//code block
+break;
+default:
+//code block
+}
