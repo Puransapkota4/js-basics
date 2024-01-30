@@ -28,3 +28,12 @@ const woodenChair = "furniture";
 const redPen = "mahakali";
 console.log(table, blackFan + woodenChair, redPen);
 console.log(2 + 2);
+
+const person = confirm("is raktim student?");
+console.log(person);
+
+const name = prompt("what is your name ?");
+console.log(name);
+
+const hello = alert("hello from puran");
+console.log(hello);

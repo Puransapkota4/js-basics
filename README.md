@@ -51,8 +51,34 @@ var box ="red box"
 const pi= 3.14
 
 2. comments
-3. interactions
-4. Data Types
+3. interactions:
+   Browser as an interface.
+
+Keyword:
+alert: alert the users by sendding any kind of message
+Prompt: ask users to input value
+Confirm : Yes/No for uber
+
+alert("message")
+promot("how old are you ?")
+confirm("are you a student?")
+
+3.
+4. Data Types:
+   String : let color="Yellow";
+   let weight = 7.5;
+   Bigint : let hugeString = BigINt ("9007148484848")
+   Boolean let x= True;
+   Unefined : let x ;
+   Null : let foo=null; // foo has no type and value
+   Symbol : symbols are notation to create unque id : const s = Symbol("Raktim")
+   Object : const person = {firstName :"john", lastName:""Doe}
+
+The object data type :
+An object , An array , A date
+
+All together there are 12 types of data
+
 5. operators
 6. Loop
 7. Functions
