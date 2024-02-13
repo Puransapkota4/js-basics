@@ -8,7 +8,7 @@ console.log("Hello world");
 var broadwayTeacher = "raktim"; // always use camel case for joining more words for variables
 console.log(broadwayTeacher);
 
-// in var keywords, value can be reassigned. A container can only be defined once with the same name and data can be overrie.
+// in var keywords, value can be reassigned. A container can only be defined once with the same name and data can be override.
 
 let teacher = "raktim";
 teacher = "sita";
@@ -40,6 +40,7 @@ console.log(hello);
 = :assign
 == : value check
 === : value and data type check
+Statement
 */
 // const gender = prompt("what is your gender ? m/f");
 // if (gender === "m") {
@@ -73,6 +74,18 @@ switch (result){
 //     alert("invalid input");
 // }
 
+// const userName = prompt("what is your name?");
+// switch (userName) {
+//   case "Puran":
+//     alert("you will succeed in life");
+//     break;
+//   case "ram":
+//     alert("its a hard time but you will be sucessful");
+//     break;
+//   default:
+//     alert("you suck");
+// }
+
 // const userName = prompt("what is your name ?");
 // const password = prompt("what is your password?");
 // //string literal
@@ -83,3 +96,21 @@ switch (result){
 // }
 
 //write a program that asks user for addition of 2 numbers and alert the result.
+
+// string , Number , Boolean , Object
+//Type Conversion/ Type casting
+
+// const userNum = Number(prompt("what is your num?"));
+// const userTrueNum = Number(userNum);
+// const userString = String(userTrueNum);
+// console.log(userString);
+
+// ..Ternary operator (ES6)
+// // //condition ? true:false
+// const userName = prompt("what is your username?");
+// const password = prompt("what is your username?");
+// // userName === password
+// //   ? alert(`welcome ${userName}`)
+// //   : alert("invalid un or pw");
+
+//
