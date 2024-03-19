@@ -113,4 +113,167 @@ switch (result){
 // //   ? alert(`welcome ${userName}`)
 // //   : alert("invalid un or pw");
 
-//
+//Function : function are the main building blocks of the program.
+//They allow code to be called many times without repetition.(DRY)
+
+//EG:
+//ES5
+//sum of two digits
+// const a = Number(prompt("A"));
+// const b = Number(prompt("B"));
+// const add = a+b;
+// console.log(add);
+
+//function define
+// function sum(a, b) {
+//   //logic
+//   return a + b;
+// }
+// const result = sum(2, 2);
+// console.log(result);
+
+// key word for function , name and parameter with the value
+// function A(c, d) {
+//   return c - d;
+// }
+// const e = A(2, 2);
+// const f = A(2, 2);
+// const g = A(2, 2);
+// console.log(e, f, g);
+
+// //ES6
+
+// const sum = (a,b) =>{
+//     return a+b;
+// };
+
+// write a function to do multiplication table of 2
+
+// const mul = (table) => {
+//   let i = 1;
+//   do {
+//     console.log(table * i);
+//     i++;
+//   } while (i <= 10);
+// };
+
+// //function call /execute
+// mul(2);
+
+// const mul = (table) => {
+//   let i = 1;
+//   do {
+//     console.log(table * i);
+//     i++;
+//   } while (i <= 5);
+// };
+// mul(3);
+
+// write a function to find the area of the triangle
+// const area = (l, b) => {
+//   return l * b;
+// };
+// const rect = area(2, 2);
+// console.log({ rect });
+
+// write a javascript function that reverses a number
+//example x= 32243; expected output : 34223
+
+// const reverse = (number) => {
+//   const str = String(number);
+//   let newNum = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newNum += str[i];
+//   }
+// };
+// const res =Number(reverse(32243));
+// console.log({res});
+
+//write a javascript finction that creates a commaformatter,
+//Example x = 1000; expected output : 10,000
+//example y = 1000000 ; expected Output : 1,000,000
+
+// Day 8 (sesh ghale mindset)
+
+//theAsciicode.com.ar website for the key code value
+//contact mentor website for the practise questions
+//s3amazonnaws.com for the exercisee function tricky and interesting questions
+//learn.js.org
+//cs.imu.edu
+
+//write a javascript program to convert temperature to and from celsius , Farenheit;
+//Default temperature should be celsius;
+//Formula : s/5 = (f-32)/9 [wher c= temperature in celsius and f= temperature in farenheite];
+
+//Expected output :
+//60*c to 140F
+//45F to 7.2222222 C
+
+// const convertTemp = (temp , type ='C') =>{
+//     if (type=== "F"){
+//         return convert to C
+//     }
+//     return convert to F
+// };
+// convertTemp("20"); //default temp c=> convert to F
+// convertTemp("120", "F");
+
+// const hello =(name='raktim') =>{
+//     console.log(`hello ${name}`)
+// }
+// hello(); // hello raktim
+// hello('puran') // hello puran
+
+//Function chaining
+// const cleanStringAndUpperCase = (sentence) => {
+//   return sentence.replaceAll("-", " ").toUpperCase();
+// };
+// const resp = cleanStringAndUpperCase("Puran is --- a genius");
+// console.log(resp);
+
+//check mdmn web dock for the key words which is already a function
+//check roadmaop.sh
+
+// Object
+
+//CRUD (create, read , update , delete) // start to think it in this way
+
+const person = {
+  name: "puran",
+  birthYear: 2054,
+  isMale: true,
+
+  age: function () {
+    return 2080 - this.birthYear;
+  },
+
+  calcAge: () => {
+    return 2080 - person.birthYear;
+  },
+};
+console.log({ person });
+
+//Read
+
+//Property
+console.log(person.name);
+//method
+console.log(person.age());
+
+//Update
+
+person.name = " PURAN ";
+console.log({ person });
+
+//DELETE
+delete person.name;
+console.log({ person });
+
+console.log(person.calcAge());
+
+// normal function vs arrow function
+// the difference between normal function and arrow function is normal function takes the global keyword
+// which is already stored and has broad global reach for the keyword as well as parents data
+//and arrow function has limited reach and can only access the parents data . so we have to specifically target the parents data only
+
+//Create your own object for car , laptop , tv and do crud operations
