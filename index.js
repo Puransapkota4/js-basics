@@ -193,7 +193,7 @@ switch (result){
 //Example x = 1000; expected output : 10,000
 //example y = 1000000 ; expected Output : 1,000,000
 
-// Day 8 (sesh ghale mindset)
+// Day  (sesh ghale mindset)
 
 //theAsciicode.com.ar website for the key code value
 //contact mentor website for the practise questions
@@ -238,38 +238,38 @@ switch (result){
 
 //CRUD (create, read , update , delete) // start to think it in this way
 
-const person = {
-  name: "puran",
-  birthYear: 2054,
-  isMale: true,
+// const person = {
+//   name: "puran",
+//   birthYear: 2054,
+//   isMale: true,
 
-  age: function () {
-    return 2080 - this.birthYear;
-  },
+//   age: function () {
+//     return 2080 - this.birthYear;
+//   },
 
-  calcAge: () => {
-    return 2080 - person.birthYear;
-  },
-};
-console.log({ person });
+//   calcAge: () => {
+//     return 2080 - person.birthYear;
+//   },
+// };
+// console.log({ person });
 
-//Read
+// //Read
 
-//Property
-console.log(person.name);
-//method
-console.log(person.age());
+// //Property
+// console.log(person.name);
+// //method
+// console.log(person.age());
 
-//Update
+// //Update
 
-person.name = " PURAN ";
-console.log({ person });
+// person.name = " PURAN ";
+// console.log({ person });
 
-//DELETE
-delete person.name;
-console.log({ person });
+// //DELETE
+// delete person.name;
+// console.log({ person });
 
-console.log(person.calcAge());
+// console.log(person.calcAge());
 
 // normal function vs arrow function
 // the difference between normal function and arrow function is normal function takes the global keyword
@@ -277,3 +277,15 @@ console.log(person.calcAge());
 //and arrow function has limited reach and can only access the parents data . so we have to specifically target the parents data only
 
 //Create your own object for car , laptop , tv and do crud operations
+
+const obj = {
+  name: "puran",
+  password: "1234",
+  email: "puransapkota4@gmail.com",
+  phone: 123456,
+};
+
+//spread operator
+
+const { password, ...test } = obj; // object destructuring
+console.log({ test });
