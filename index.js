@@ -436,6 +436,28 @@ switch (result){
 // page 2 => ['anima', 'sumit']
 // page 3 => ['samundra' , 'kuber']
 
-//immutable js
+//Array
+// .split() , Includes , some , slice , shift , filter , join , reduce, pop(), push, length, every, forEach , sort , map
 
-//
+// orginal data is also know as golden source of truth . Thats why we use the copy of the data and put it in the memory and we operate it there .
+
+//immutable js : it is the method  which  works after copying the data is call immutable js .  it is the method which encourage to work on the copied files. overall , when we use such method to solve the problem is considered as immutable js
+// eg of immutable data are : map , filter , reduce , every , some
+// use this method to solve the array problem
+
+// write the javascript function that checks the username and password in the database.
+// and checks if the password match or not
+// return bool value
+
+const db = [
+  { username: "puran", password: "pass1" },
+  { username: "sarina", password: "pass2" },
+  { username: "saroj", password: "pass3" },
+  { username: "Ambika", password: "pass4" },
+  { username: "krishna", password: "pass5" },
+];
+
+// write a js function that search the user based on the key input
+//EG :  "s " =>  [{username: "sarina", password: "pass2"} , { username: "saroj", password: "pass3" }]
+
+// Date
