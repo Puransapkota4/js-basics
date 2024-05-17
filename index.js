@@ -416,10 +416,10 @@ switch (result){
 // write a js functionn that creates a sum of numbers from 1 to 10
 //EG : [1,2,3,4,5,6,7,8,9,10] => 55
 
-const getSum = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
+// const getSum = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
 
-const resp = getSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-console.log({ resp });
+// const resp = getSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// console.log({ resp });
 
 //let food = ['noodle' , 'pasta' , Ice-cream'];
 // let food = ['fries', 'ice-cream' , 'pizza'];
