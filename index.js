@@ -86,6 +86,18 @@ switch (result){
 //     alert("you suck");
 // }
 
+// const age = prompt("what is your age");
+// switch (age) {
+//   case "under 18":
+//     alert(" you are minor");
+//     break;
+//   case " above 18":
+//     alert("you are not minor");
+//     break;
+//   default:
+//     alert(" invalid");
+// }
+
 // const userName = prompt("what is your name ?");
 // const password = prompt("what is your password?");
 // //string literal
@@ -112,6 +124,12 @@ switch (result){
 // // userName === password
 // //   ? alert(`welcome ${userName}`)
 // //   : alert("invalid un or pw");
+
+// const userName = prompt("what is your userName?");
+// const place = prompt("where are you from?");
+// userName === place
+//   ? alert(`welcome ${userName} `)
+//   : alert("you are not from here");
 
 //Function : function are the main building blocks of the program.
 //They allow code to be called many times without repetition.(DRY)
@@ -278,14 +296,146 @@ switch (result){
 
 //Create your own object for car , laptop , tv and do crud operations
 
-const obj = {
-  name: "puran",
-  password: "1234",
-  email: "puransapkota4@gmail.com",
-  phone: 123456,
-};
+// const obj = {
+//   name: "puran",
+//   password: "1234",
+//   email: "puransapkota4@gmail.com",
+//   phone: 123456,
+// };
 
-//spread operator
+// //spread operator
 
-const { password, ...test } = obj; // object destructuring
-console.log({ test });
+// //it means it takes out password from the object
+
+// const { password, ...test } = obj; // object destructuring
+// console.log({ test });
+
+//Exercise:
+// use given object and loop through its properties
+// and if it has property "discount"
+// print " Already discounted by
+// and add value (How much was the discount .
+// in opposite case
+//do what you do in the previous exercise .
+// check the price depending on it
+//  if its greater 0r lower than 100
+//  add discount (10% or 7%) and the property dicount to the object
+
+// let prod = {
+//   name: "headphones",
+//   price: 83.7,
+//   discount: "7%",
+// };
+
+// const checkDiscount = (obj) => {
+//   return Object.hasOwn(obj, "discount")
+//     ? `Already discounted by ${obj.discount}`
+//     : "No discount found";
+// };
+// const resp = checkDiscount(prod);
+// console.log({ resp });
+
+// const findDiscount = (obj) => {
+//   delete obj.discount;
+//   const discountPercent = obj.price > 100 ? 10 : 7;
+//   obj.discount = `${discountPercent} %`;
+//   obj.price = obj.price - (discountPercent / 100) * obj.price;
+//   return obj;
+// };
+// console.log(findDiscount(prod));
+
+//End result should be like this>>
+// end result- case 2:
+//{name: 'headphones' , price:'77.84' , dicount:'7%'}
+//end result - case1:
+//Already discounted by 7%
+
+// Array
+
+//CRUD
+
+//create
+
+// const newAr = [];
+
+// // Read
+
+// const cars = ["BMW", "Toyota", { name: "tesla" }];
+// console.log(cars[1]);
+
+// //update
+// cars[0] = "hyundai";
+// console.log(cars);
+
+// //delete
+
+// delete cars[0];
+// console.log[cars];
+
+// // Array methods
+// cars.length; // return the number of elements
+// console.log(cars);
+
+// cars.sort(); // sprt the array
+
+// cars.push(); // insert new items at the back
+
+// cars.pop(); // get the last item
+
+// cars.toString(); // join all the string
+
+// const group =[
+//     {name:"puran", age:30},
+//     { name:"ruchi", age:26},
+//     {name:"samundra", age:26},
+//     { name:"puran", age: 25}
+// ]
+
+// Array sort method and sort the data in ascending orfer by age(sano to thulo)
+
+// write a js function that checks if the user has aceess or not
+
+// const userRole = ["user", "vendor"];
+// const sysRole = ["admin", "vendor"];
+
+// const checkRole = (ur, sr) => sr.some((role) => ur.includes(role));
+// console.log(checkRole(userRole, sysRole));
+
+//write a js function that creates slug
+//EG : understanding next js architecture
+// => understanding-nextjs-architecture
+
+// const slugger = (sentence) => {
+//   string(sentence)
+//     .toLowerCase.replaceAll(/!@#$%^&*"'()/g, "")
+//     .replaceAll(" ", "-");
+//   const res = slugger("understanding Nest js Architecture");
+//   console.log({ res });
+// };
+
+// write a js functionn that creates a sum of numbers from 1 to 10
+//EG : [1,2,3,4,5,6,7,8,9,10] => 55
+
+const getSum = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
+
+const resp = getSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log({ resp });
+
+//let food = ['noodle' , 'pasta' , Ice-cream'];
+// let food = ['fries', 'ice-cream' , 'pizza'];
+//compare the two arrrays and find the common food if any
+
+// write a js function that works as a pagination
+
+//const arr = ['Noodle' , 'pasta' , 'Ice-Cream'];
+// const page = 1 ; dynamic
+//const limit = 2 ; //dynamic
+
+//Example
+// page 1 => ['raktim' , 'ruchi']
+// page 2 => ['anima', 'sumit']
+// page 3 => ['samundra' , 'kuber']
+
+//immutable js
+
+//
