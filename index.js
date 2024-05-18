@@ -449,24 +449,24 @@ switch (result){
 // and checks if the password match or not
 // return bool value
 
-const db = [
-  { username: "puran", password: "pass1" },
-  { username: "sarina", password: "pass2" },
-  { username: "saroj", password: "pass3" },
-  { username: "Ambika", password: "pass4" },
-  { username: "krishna", password: "pass5" },
-];
+// const db = [
+//   { username: "puran", password: "pass1" },
+//   { username: "sarina", password: "pass2" },
+//   { username: "saroj", password: "pass3" },
+//   { username: "Ambika", password: "pass4" },
+//   { username: "krishna", password: "pass5" },
+// ];
 
-const login = (un, pw) => {
-  const result = db.find((data) => data.username === un);
-  console.log({ result });
-  if (!result) console.log("user doesnt exist");
-  const resp = result.passwprd === pw ? true : false;
-  if (!resp) console.log("password or un matched");
-  return resp;
-};
-const result = login("puran", "pass1");
-console.log({ result });
+// const login = (un, pw) => {
+//   const result = db.find((data) => data.username === un);
+//   console.log({ result });
+//   if (!result) console.log("user doesnt exist");
+//   const resp = result.passwprd === pw ? true : false;
+//   if (!resp) console.log("password or un matched");
+//   return resp;
+// };
+// const result = login("puran", "pass1");
+// console.log({ result });
 // write a js function that search the user based on the key input
 //EG :  "s " =>  [{username: "sarina", password: "pass2"} , { username: "saroj", password: "pass3" }]
 
@@ -492,3 +492,5 @@ console.log({ result });
 // console.log(iso, utc);
 
 // iso string is used for machine to machine connection and UTC is used to make it human readable
+
+//
