@@ -457,7 +457,38 @@ const db = [
   { username: "krishna", password: "pass5" },
 ];
 
+const login = (un, pw) => {
+  const result = db.find((data) => data.username === un);
+  console.log({ result });
+  if (!result) console.log("user doesnt exist");
+  const resp = result.passwprd === pw ? true : false;
+  if (!resp) console.log("password or un matched");
+  return resp;
+};
+const result = login("puran", "pass1");
+console.log({ result });
 // write a js function that search the user based on the key input
 //EG :  "s " =>  [{username: "sarina", password: "pass2"} , { username: "saroj", password: "pass3" }]
 
 // Date
+
+// const now = new Date();
+// const year = now.getFullYear();
+// const month = now.getMonth();
+// const day = now.getDay();
+// const time = now.getTime();
+// console.log({ year, month, day, time });
+
+// const past = new Date("1998-06-12");
+// const year = past.getFullYear();
+// const month = past.getMonth();
+// const day = past.getDay();
+// console.log({ year, month, day });
+
+// ISO String , UTC String , Time String
+
+// const iso = now.toISOString();
+// const utc = now.toUTCString();
+// console.log(iso, utc);
+
+// iso string is used for machine to machine connection and UTC is used to make it human readable
