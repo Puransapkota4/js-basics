@@ -89,11 +89,11 @@ console.log(" i am array");
 // write a js function that finds the largest sentece in the arrayBuffer.Date
 // eg const countries = [ "Nepal" , "India", "Japan", "Ireland", "United Kingdom"]
 
-const countries = ["Nepal", "India", "Japan", "Ireland", "United Kingdom"];
-const largestCountry = (countries) =>
-  countries.sort((a, b) => a.length - b.length).pop(); // This type of function is called implicit function
-const result = largestCountry(countries);
-console.log(result);
+// const countries = ["Nepal", "India", "Japan", "Ireland", "United Kingdom"];
+// const largestCountry = (countries) =>
+//   countries.sort((a, b) => a.length - b.length).pop(); // This type of function is called implicit function
+// const result = largestCountry(countries);
+// console.log(result);
 
 // write a js function that return boolean value when we compare two roles
 
@@ -103,7 +103,51 @@ console.log(result);
 
 //result : true
 
-//write a js function that returns the number in array that are divisible by 5
-//EG :
-const numbers = [1, 4, 5, 8];
-//result[15]
+// const userRole = ["user", "vendor"];
+// const sysRoles = ["admin", "vendor"];
+
+// const checkRole = (user, system) => system.some((role) => user.includes(role));
+// const res = checkRole(userRole, sysRoles);
+// console.log({ res });
+
+// //write a js function that returns the number in array that are divisible by 5
+// //EG :
+// const numbers = [1, 4, 5, 8, 10];
+// //result[5,10]
+
+// const getDivisible = (num) => num.filter((number) => number % 5 === 0);
+// const resu = getDivisible(numbers);
+// console.log({ resu });
+
+// write a js function that return the decimal value in the following array
+//eg
+const numeral = [1, 2, 3];
+//result [1.oo ,2.00, 3.00]
+const getDecimal = (numbers) =>
+  numbers.map((number) => String(number).concat(".00"));
+const rest = getDecimal(numeral);
+console.log({ rest });
+
+// write a js function that handles the pagination
+
+// const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const page = 1;
+// const limit = 2;
+
+//result page 1 => [1,2]
+//result page 2 => [3,4]
+//result page 5 => [9,10]
+//result page 10 => []
+
+//write a js function that finds the bird name starting with a character
+
+const birds =['parrot', 'Eagles' , 'emus', "caracaras" , "egrets"];
+const eBirds = (birds) =>{
+    return birds.filter((bird) ={
+        if (bird.search(/[eE]/g)) {
+            return bird;
+        }
+    });
+};
+console.log(eBirds(birds));
+    
