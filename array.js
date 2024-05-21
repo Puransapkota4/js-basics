@@ -121,12 +121,12 @@ console.log(" i am array");
 
 // write a js function that return the decimal value in the following array
 //eg
-const numeral = [1, 2, 3];
-//result [1.oo ,2.00, 3.00]
-const getDecimal = (numbers) =>
-  numbers.map((number) => String(number).concat(".00"));
-const rest = getDecimal(numeral);
-console.log({ rest });
+// const numeral = [1, 2, 3];
+// //result [1.oo ,2.00, 3.00]
+// const getDecimal = (numbers) =>
+//   numbers.map((number) => String(number).concat(".00"));
+// const rest = getDecimal(numeral);
+// console.log({ rest });
 
 // write a js function that handles the pagination
 
@@ -141,13 +141,117 @@ console.log({ rest });
 
 //write a js function that finds the bird name starting with a character
 
-const birds =['parrot', 'Eagles' , 'emus', "caracaras" , "egrets"];
-const eBirds = (birds) =>{
-    return birds.filter((bird) ={
-        if (bird.search(/[eE]/g)) {
-            return bird;
-        }
-    });
-};
-console.log(eBirds(birds));
-    
+// const birds =['parrot', 'Eagles' , 'emus', "caracaras" , "egrets"];
+// const eBirds=(birds =>{
+//     return birds.filter((bird) = {
+//         if (bird.search(/[eE]/g)){
+//             return bird;
+//         }
+//     });
+// };
+// left to solve
+
+//regex: A regex (regular expression) website typically refers to a web-based tool or resource that helps users create, test, and learn about regular expressions. Regular expressions are sequences of characters that define search patterns, often used for string matching and manipulation.
+
+// do the exercise of from github :
+//https://github.com/jamsqquick/javascript-array-function-practice
+
+// const characters = [
+//   {
+//     name: "Luke Skywalker",
+//     height: "172",
+//     mass: "77",
+//     eye_color: "blue",
+//     gender: "male",
+//   },
+//   {
+//     name: "Darth Vader",
+//     height: "202",
+//     mass: "136",
+//     eye_color: "yellow",
+//     gender: "male",
+//   },
+//   {
+//     name: "Leia Organa",
+//     height: "150",
+//     mass: "49",
+//     eye_color: "brown",
+//     gender: "female",
+//   },
+//   {
+//     name: "Anakin Skywalker",
+//     height: "188",
+//     mass: "84",
+//     eye_color: "blue",
+//     gender: "male",
+//   },
+// ];
+
+// //MAP
+// //Get an array of all names
+
+// const getAllName = (characters) =>
+//   characters.map((character) => character.name);
+
+// const resp = getAllName(characters);
+// console.log({ resp });
+
+// //Get an array of all heights
+// console.log(characters.map((character) => character.height));
+
+// //Get an array of objects with just name and height properties
+
+// console.log(
+//   characters.map((character) => {
+//     return { name: character.name, height: character.height };
+//   })
+// );
+
+// Questions to be practised
+
+//Get an array of all first names
+
+//REDUCE
+// Get the total mass of all characters
+
+// Get the total height of all characters
+// Get the total number of characters in all the character names
+// Get the total number of characters by eye color (hint. a map of eye color to count)
+// FILTER
+// Get characters with mass greater than 100
+// Get characters with height less than 200
+// Get all male characters
+// Get all female characters
+// SORT
+// Sort by name
+// Sort by mass
+// Sort by height
+// Sort by gender
+// EVERY
+// Does every character have blue eyes?
+// Does every character have mass more than 40?
+// Is every character shorter than 200?
+// Is every character male?
+// SOME
+// Is there at least one male character?
+// Is there at least one character with blue eyes?
+// Is there at least one character taller than 200?
+// Is there at least one character that has mass less than 50?
+
+//hoisting :
+/*Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use functions and variables before they are declared in the code.
+
+How Hoisting Works
+Variable Hoisting: Only the declaration is hoisted, not the initialization.
+Function Hoisting: Both the function name and the body are hoisted. */
+
+/*
+js Good practices : 
+1. Avoid Global variables
+2. Always declare local variables
+3. Declaration on top
+4. initialize variables
+5. Declare object with const
+6. Declare arrray with const
+7. use === Comparison
+8. use parameter Defaults while using the function */
